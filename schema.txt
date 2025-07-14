@@ -1,0 +1,45 @@
+
+Database Schema for VINsight - Vehicle VIN Decoder App
+
+Tables:
+========
+
+1. users
+-----------
+id             SERIAL PRIMARY KEY
+username       TEXT UNIQUE NOT NULL
+email          TEXT UNIQUE NOT NULL
+password_hash  TEXT NOT NULL
+
+2. vehicles
+-----------
+vin            VARCHAR(17) PRIMARY KEY
+make           TEXT
+model          TEXT
+model_year     INTEGER
+trim           TEXT
+engine         TEXT
+fuel_type      TEXT
+transmission   TEXT
+drive_type     TEXT
+body_class     TEXT
+plant_country  TEXT
+cached_at      TIMESTAMP DEFAULT NOW()
+
+3. vin_lookups
+---------------
+id             SERIAL PRIMARY KEY
+user_id        INTEGER REFERENCES users(id) ON DELETE SET NULL
+vin            VARCHAR(17) REFERENCES vehicles(vin) ON DELETE CASCADE
+created_at     TIMESTAMP DEFAULT NOW()
+
+
+Relationships:
+==============
+- One user can have many VIN lookups (1:N between users and vin_lookups)
+- Each VIN lookup is tied to one decoded vehicle (N:1 between vin_lookups and vehicles)
+- Each vehicle (VIN) can have many lookups (1:N between vehicles and vin_lookups)
+
+Crow’s Foot Description:
+------------------------
+[users] 1 —< N [vin_lookups] >—1 [vehicles]

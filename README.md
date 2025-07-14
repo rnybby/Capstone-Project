@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Capstone-Project
+# Final Project Proposal: VINsight – A Vehicle VIN Decoder & Insight Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. What tech stack will you use for your final project?
+I will be using **React** for the front-end and potentially **Node.js** or **Express** for future back-end expansion. For now, the application will focus on a React-based front-end that consumes a public open-source API (NHTSA's Vehicle API). This choice aligns with my interest in frontend-focused development and allows for faster iteration and deployment.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 2. Is the front-end UI or the back-end going to be the focus of your project? Or are you going to make an evenly focused full-stack application?
+The **front-end UI** will be the primary focus of the project. The goal is to build a clean, user-friendly interface that allows users to input a VIN and receive structured vehicle data in a visually appealing way. Back-end development may be added in later phases to support features like saving searches or logging history.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 3. Will this be a website? A mobile app? Something else?
+This will be a **responsive website** built as a single page application in React. It will be optimized for desktop and mobile browsers, allowing users to quickly access the tool without needing to install anything.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 4. What goal will your project be designed to achieve?
+The project is designed to help **car buyers, DIY mechanics, and mobile repair techs** quickly and accurately decode Vehicle Identification Numbers and access detailed information about a vehicle’s specifications, safety ratings, and recall data. It solves the problem of needing to search through multiple sources to understand a vehicle's background.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 5. What kind of users will visit your app? In other words, what is the demographic of your users?
+The target users include:
+- **Used car buyers** wanting to verify vehicle details before purchase.
+- **Mobile mechanics** and repair techs needing quick reference on vehicle specs.
+- **Car enthusiasts** and DIYers looking for reliable vehicle information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+These users value accuracy, speed, and simplicity in tools they can access from anywhere.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 6. What data do you plan on using? How are you planning on collecting your data?
+I will use data from the **NHTSA vPIC (Vehicle API)**, which is a public domain, open-source government API. The main endpoint I’ll use is `DecodeVin`, which returns detailed information about a vehicle’s make, model, year, engine, transmission, trim, and more based on a VIN input. I may also use additional endpoints for **recall data** and **crash safety ratings**.
 
-### `npm run eject`
+The API does not require authentication and supports JSON responses, making it ideal for integration into a React frontend.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Step 3:
+API Used: https://vpic.nhtsa.dot.gov/api/
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

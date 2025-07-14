@@ -40,4 +40,9 @@ The API does not require authentication and supports JSON responses, making it i
 
 
 
+## Step 3:
+API Used: https://vpic.nhtsa.dot.gov/api/
+
+
+
 

@@ -1,3 +1,4 @@
+import './App.css';
 import React, { useState } from 'react';
 import VINForm from './components/VINForm';
 import VehicleInfo from './components/VehicleInfo';

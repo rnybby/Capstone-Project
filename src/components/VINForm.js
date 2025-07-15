@@ -17,7 +17,7 @@ function VINForm({onSearch}){
               type="text"
               value={vin}
               onChange={(e)=>setVin(e.target.value)}
-              plcaeholder="Enter VIN (17 Character)"
+              placeholder="Enter VIN (17 characters)"
             />
             <button type="submit">Decode</button>
         </form>

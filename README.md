@@ -43,6 +43,56 @@ The API does not require authentication and supports JSON responses, making it i
 ## Step 3:
 API Used: https://vpic.nhtsa.dot.gov/api/
 
+## Documentation:
+
+
+# VINsight – VIN Decoder & Vehicle Insight Tool
+
+🔗 **Live Site**: (https://keen-mousse-a4955e.netlify.app/)
+
+---
+
+## What the Website Does
+
+VINsight is a simple webbased VIN decoder that allows users to enter a 17-character Vehicle Identification Number (VIN) and instantly get back key vehicle details such as the make, model, year, engine type, and body class.
+
+This tool uses the open source [NHTSA Vehicle API](https://vpic.nhtsa.dot.gov/api/) to fetch real time vehicle data.
+
+---
+
+## Features Implemented
+
+- **VIN Input Form**  
+  Users can enter a VIN to fetch vehicle details in real-time.
+
+- **Clean, User-Friendly UI**  
+  Styled using plain CSS with a polished layout, responsive for both desktop and mobile.
+
+- **API Integration**  
+  Directly queries the NHTSA Vehicle API without needing a backend.
+
+- **Loading & Error States**  
+  Users are shown helpful messages if data is loading or if a VIN is invalid.
+
+- **Testing Setup**  
+  Tests written with React Testing Library to ensure core components render properly.
+
+These features were chosen to create a realistic, usable app while reinforcing front-end API integration and UI design fundamentals.
+
+---
+
+## Tests
+
+Basic tests are located in:
+
+- `src/components/VINForm.test.js`
+
+### To run tests:
+
+```bash
+npm test
+
+
 
 
 
